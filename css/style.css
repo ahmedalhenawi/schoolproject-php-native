@@ -1,0 +1,95 @@
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    margin-top: 50px;
+    margin-left: 50px;
+    column-gap: 50px;
+ }
+ .services .srv{
+    display: flex;
+    margin-bottom: 40px ;
+
+ }
+ .services .srv i{
+    flex-basis: 100px;
+    color: #10cab7;
+    text-align: center;
+    font-size: 30px;    
+ }
+ .services .srv  .text{
+    flex: 1;
+ }
+ .services .srv .text h3{
+    margin: 0;
+    display: inline;
+    font-size: 25px;
+ }
+ .services .srv  .text h3 + p{
+    color: #a1a1a1;
+    line-height: 1.6;
+    display: inline;
+ }
+ .services .col .img{
+    height: 300px;
+    width: 200px;
+    background-color: #777;
+    position: relative;
+ }
+ .services .col .img::before{
+    content: "";
+    position: absolute;
+    height: calc(100% + 100px);
+    width: 70px;
+    background-color: #1787e0;
+    top: -50px;
+    right: calc(0% - 35px);
+    z-index: -1;
+ }
+ .col{
+    margin-top: 30px;
+    margin-left: 50px;
+ }
+
+ .services{
+    margin-bottom: 50px;
+ }
+
+ @media (max-width:1199px) { 
+    .services .srv{
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .services .srv .text{
+        text-align: center;
+    }
+    .services .srv i{
+        flex-basis: 50px;
+    }
+
+    .services-content{
+        margin-top: 150px;
+    }
+
+  }
+
+  @media (max-width:950px) { 
+  .services .col .img{
+    display: none;
+}
+  }
+
+  .srv2{
+    margin-top: 30px;
+  }
+  .srv2 .text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    
+  }  .srv2 .text p {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+ /* end services */
